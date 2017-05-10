@@ -1,2 +1,2 @@
-# kucc-react-boilerplate
-React webpack boilerplate for KUCC
+# audio-visualizer
+Spherical audio visualizer
