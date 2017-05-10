@@ -1,3 +1,4 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
@@ -47,6 +48,12 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
       template: 'static/index.html'
-    })
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: 'public',
+        to: 'dist',
+      }
+    ], {})
   ],
 };
