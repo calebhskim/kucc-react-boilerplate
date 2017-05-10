@@ -1,2 +1,4 @@
-# audio-visualizer
-Spherical audio visualizer
+# React boilerplate
+- React
+- Webpack
+- React Router

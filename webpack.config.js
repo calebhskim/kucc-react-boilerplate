@@ -33,7 +33,8 @@ module.exports = {
     // match the output path
     contentBase: path.resolve(__dirname, 'dist'),
     // match the output `publicPath`
-    publicPath: '/'
+    publicPath: '/',
+    historyApiFallback: true
   },
   module: {
     rules: [
