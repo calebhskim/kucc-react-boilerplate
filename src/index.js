@@ -11,6 +11,7 @@ import App from './components/App';
 import initialState from './constants/initialState';
 import serverInit from './actions/serverInit';
 import Store from './store';
+import Test from './components/Test';
 
 // Grab the state from a global variable injected into the server-generated HTML
 const preloadedState = window.PRELOADED_STATE || initialState;
@@ -23,6 +24,7 @@ const render = (Component) => {
       <Router>
         <div>
           <Route path='/' component={Component} />
+          <Route path='/test' component={Test} />
         </div>
       </Router>
     </Provider>,
