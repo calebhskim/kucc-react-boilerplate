@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import {
   BrowserRouter as Router,
+  Link,
   Route,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -23,7 +24,11 @@ const render = (Component) => {
     <Provider store={store}>
       <Router>
         <div>
-          <Route path='/' component={Component} />
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/test">Test</Link></li>
+          </ul>
+          <Route path='/' component={Component} exact={true} />
           <Route path='/test' component={Test} />
         </div>
       </Router>
