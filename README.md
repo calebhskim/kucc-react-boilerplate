@@ -11,6 +11,7 @@ mkdir [your_project_name]
 git clone https://github.com/calebhskim/kucc-react-boilerplate.git
 cp -r kucc-react-boilerplate/* [your_project_name]
 cd your_project_name
+rm -rf .git
 npm install
 npm run local
 ```
