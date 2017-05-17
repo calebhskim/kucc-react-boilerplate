@@ -1,3 +1,3 @@
 export default {
   APP_INITIALIZED_SUCCESS: 'APP_INITIALIZED_SUCCESS',
-}
+};

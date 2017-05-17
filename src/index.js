@@ -21,19 +21,21 @@ const store = new Store(preloadedState);
 
 const render = (Component) => {
   ReactDOM.render(
-    <Provider store={store}>
-      <Router>
-        <div>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/test">Test</Link></li>
-          </ul>
-          <Route path='/' component={Component} exact={true} />
-          <Route path='/test' component={Test} />
-        </div>
-      </Router>
-    </Provider>,
-    document.getElementById('root')
+    <AppContainer>
+      <Provider store={store}>
+        <Router>
+          <div>
+            <ul>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/test'>Test</Link></li>
+            </ul>
+            <Route path='/' component={Component} exact={true} />
+            <Route path='/test' component={Test} />
+          </div>
+        </Router>
+      </Provider>
+    </AppContainer>,
+    document.getElementById('root'),
   );
 };
 
@@ -43,6 +45,6 @@ render(App);
 // Hot Module Replacement API
 if (module.hot) {
   module.hot.accept('./components/App', () => {
-    render(App)
+    render(App);
   });
 }
