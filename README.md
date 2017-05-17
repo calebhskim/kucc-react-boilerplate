@@ -10,6 +10,6 @@ mkdir [your_project_name]
 git clone https://github.com/calebhskim/kucc-react-boilerplate.git
 cp -r kucc-react-boilerplate/* [your_project_name]
 cd your_project_name
-yarn
-yarn run local
+npm install
+npm run local
 ```
