@@ -1,5 +1,6 @@
 # React boilerplate
 - React
+- Redux
 - Webpack
 - React Router
 # Installation
