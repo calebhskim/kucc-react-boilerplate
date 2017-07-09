@@ -1,7 +1,7 @@
 {
-  "name": "audio-visualizer",
+  "name": "kucc-react-boilerplate",
   "version": "0.0.1",
-  "description": "audio visualizer",
+  "description": "KUCC React Boilerplate",
   "main": "index.js",
   "scripts": {
     "build": "webpack -p",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/calebhskim/audio-visualizer.git"
+    "url": "git+https://github.com/calebhskim/kucc-react-boilerplate.git"
   },
   "author": "Caleb Kim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/calebhskim/audio-visualizer/issues"
+    "url": "https://github.com/calebhskim/kucc-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/calebhskim/audio-visualizer#readme",
+  "homepage": "https://github.com/calebhskim/kucc-react-boilerplate#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
